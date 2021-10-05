@@ -7,7 +7,7 @@ body{
 }
 .main{
     position: absolute;
-    background: rgba(202, 184, 149, 0.582);
+    background: rgba(202, 184, 149, 0.5);
     height: 100%;
     width: 100%;
 }
@@ -17,9 +17,10 @@ body{
     width: 350px;
     height: 100%;
     justify-content: flex-start;
-    background-color: rgba(201, 129, 103, 0.459);
-    margin-left: 10px;
+    background-color:rgba(182, 104, 85, 0.651);
+    /* margin-left: 10px; */
     align-items: center;
+    text-align: center;
 }
 .photo{
     padding-top: 10px;
