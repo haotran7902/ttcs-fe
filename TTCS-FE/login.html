@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="./assets/img/icons8-v-16.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="header-wrapper">
+                <div class="toggle-box">
+                    <a href="#" class="header__toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div class="header__tel">
+                    <i class="phone-icon fa-solid fa-phone"></i>
+                    <span>0373357405.</span>
+                </div>
+                <div class="header__logo">
+                    <a href="./index.html" class="logo__link">
+                        <img src="./assets/img/logo.jpg" alt="logo" class="logo__img">
+                    </a>
+                </div>
+                <div class="header__control">
+                    <div class="header__search">
+                        <div class="form-search">
+                            <i class="control-icon fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" class="search-input" required placeholder="Search ...">
+                            <i class="close-icon fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="header__user">
+                        <a href="./login.html" class="header__user-link">
+                            <i class="control-icon fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                    <div class="header__cart">
+                        <a href="./cart.html" class="header__cart-link">
+                            <i class="control-icon fa-solid fa-cart-shopping"></i>
+                            <span class="header__cart--notify">1</span>
+                        </a>
+                    </div>
+                    <div class="mobile-header__search">
+                        <span class="mobile__search-icon">
+                            <i class="control-icon fa-solid fa-magnifying-glass"></i>
+                            <!-- <i class="close-icon fa-solid fa-xmark"></i> -->
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile__search-box">
+                <input type="text" placeholder="Search ...">
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="navbar__wrapper">
+                <ul class="navbar-list">
+                    <li class="navbar-item navbar-item--current">
+                        <a href="./" class="navbar-item__link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="shop.html" class="navbar-item__link">
+                            Shop
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="navbar__list-product">
+                                <li class="navbar__item-product">
+                                    <a href="#" class="navbar__product-link">Tiểu Thuyết</a>
+                                </li>
+                                <li class="navbar__item-product">
+                                    <a href="#" class="navbar__product-link">Manga - Comic</a>
+                                </li>
+                                <li class="navbar__item-product">
+                                    <a href="#" class="navbar__product-link">Marketing - Bán Hàng</a>
+                                </li>
+                                <li class="navbar__item-product">
+                                    <a href="#" class="navbar__product-link">Kỹ Năng Sống</a>
+                                </li>
+                                <li class="navbar__item-product">
+                                    <a href="#" class="navbar__product-link">Tâm Lý</a>
+                                </li>
+                                <li class="navbar__item-product">
+                                    <a href="#" class="navbar__product-link">Nghệ Thuật Giải Trí</a>
+                                </li>
+                                <li class="navbar__item-product">
+                                    <a href="#" class="navbar__product-link">Cẩm Nang Làm Cha Mẹ</a>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./contact.html" class="navbar-item__link">Contact</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./about.html" class="navbar-item__link">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <main class="main">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <ul class="breadcrumb">
+                            <li><a href="./">Trang chủ</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li><a href="#">Tài khoản</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li><a href="#">Đăng nhập</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l-12 m-12 c-12">
+                        <div class="form form-sign-in">
+                            <!-- Form login -->
+                            <form action="" method="POST" class="form-login" id="form-login">
+                                <h3 class="heading">Đăng nhập</h3>
+                                <p class="description">Welcome to Vergency</p>
+                    
+                                <div class="spacer"></div>
+                
+                                <div class="form-group">
+                                    <input type="text" name="username" class="form-control email" placeholder=" ">
+                                    <label for="username" class="form-label">Email</label>
+                                    <span class="form-message"></span>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <input type="password" name="password" class="form-control password" placeholder=" ">
+                                    <label for="password" class="form-label">Mật khẩu</label>
+                                    <span class="form-message"></span>
+                                </div>
+                    
+                                <button type="submit" class="form-submit">Đăng nhập</button>
+                                
+                                <div class="req-pass">
+                                    <a href="#" class="recover-password">Quên mật khẩu</a>
+                                    <a href="#" class="sign-up-link">Đăng ký</a>
+                                </div>
+                
+                                <div class="or">
+                                    <div></div>
+                                    <span class="or-text">Hoặc</span>
+                                    <div></div>
+                                </div>
+                
+                                <div class="form-btn">
+                                    <button class="sign-in-btn sign-in-with-fb">
+                                        <i class="fb-icon fa-brands fa-facebook"></i>
+                                        <span>Facebook</span>
+                                    </button>
+                                    <button class="sign-in-btn sign-in-with-google">
+                                        <i class="fa-brands fa-google"></i>
+                                        <span>Google</span>
+                                    </button>
+                                </div>
+                
+                                <div class="support">
+                                    <a href="#">Bạn cần giúp đỡ?</a>
+                                </div>
+
+                                
+                            </form>
+
+                            <!-- Form register -->
+                            <form action="" method="POST" class="form-register" id="form-register">
+                                <h3 class="heading">Đăng ký</h3>
+                                <p class="description">Welcome to Vergency</p>
+                    
+                                <div class="spacer"></div>
+                    
+                                <div class="form-group">
+                                    <input type="text" name="username" class="form-control firstname" placeholder=" ">
+                                    <label for="username" class="form-label">Họ</label>
+                                    <span class="form-message"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" name="username" class="form-control lastname" placeholder=" ">
+                                    <label for="username" class="form-label">Tên</label>
+                                    <span class="form-message"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" name="username" class="form-control email" placeholder=" ">
+                                    <label for="username" class="form-label">Email</label>
+                                    <span class="form-message"></span>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <input type="password" name="password" class="form-control password" placeholder=" ">
+                                    <label for="password" class="form-label">Mật khẩu</label>
+                                    <span class="form-message"></span>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <input type="password" id="repeat_password" name="repeat_password" class="form-control" placeholder=" ">
+                                    <label for="repeat_password" class="form-label">Nhập lại mật khẩu</label>
+                                    <span class="form-message"></span>
+                                </div>
+                
+                                <button class="form-submit">Đăng ký</button>
+                                <div class="req-pass">
+                                    <span>Bạn đã có tài khoản?</span>
+                                    <a href="#" class="sign-in-link">Đăng nhập</a>
+                                </div>
+                
+                                <div class="or">
+                                    <div></div>
+                                    <span class="or-text">Hoặc</span>
+                                    <div></div>
+                                </div>
+                
+                                <div class="form-btn">
+                                    <button class="sign-in-btn sign-in-with-fb">
+                                        <i class="fb-icon fa-brands fa-facebook"></i>
+                                        <span>Facebook</span>
+                                    </button>
+                                    <button class="sign-in-btn sign-in-with-google">
+                                        <i class="fa-brands fa-google"></i>
+                                        <span>Google</span>
+                                    </button>
+                                </div>
+                
+                                <div class="support">
+                                    <a href="#">Bạn cần giúp đỡ?</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <div class="footer-center">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer-box">
+                                <h3 class="footer-title">Thông tin liên hệ:</h3>
+                                <ul class="footer-menu">
+                                    <li class="footer-address">
+                                        891 Hương Lộ 2, Bình Trị Đông A, Bình Tân, TP. Hồ Chí Minh (AM: 08H30 -> 11H45, PM: 13H30 -> 17H45) KH vui lòng đến đúng khung giờ mở cửa trên để mua hàng. Vergency chân thành cảm ơn.
+                                    </li>
+                                    <li class="footer-phone">
+                                        <p>Phone: </p>
+                                        <span>
+                                            <a href="">037 335 7405.</a>
+                                        </span>
+                                    </li>
+                                    <li class="footer-email">
+                                        <p>Email: </p>
+                                        <span>vergency.contact@gmail.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer-box">
+                                <h3 class="footer-title">CHÍNH SÁCH HỖ TRỢ</h3>
+                                <ul class="footer-menu">
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Tìm kiếm</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Giới thiệu</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Chính sách đổi trả</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Chính sách bảo mất</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="#" class="footer-item__link">Điều khoản dịch vụ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer-box">
+                                <h3 class="footer-title">THÔNG TIN LIÊN HỆ</h3>
+                                <div class="footer__social">
+                                    <div class="footer__social-item">
+                                        <a href="#" class="footer__social-link">
+                                            <i class="icon-facebook fa-brands fa-facebook"></i>
+                                            <span>Facebook</span>
+                                        </a>
+                                    </div>
+                                    <div class="footer__social-item">
+                                        <a href="" class="footer__social-link">
+                                            <i class="icon-instagram fa-brands fa-instagram"></i>
+                                            <span>Instagram</span>
+                                        </a>
+                                    </div>
+                                    <div class="footer__social-item tiktok">
+                                        <a href="" class="footer__social-link">
+                                            <i class="icon-tiktok fa-brands fa-tiktok"></i>
+                                            <span>TikTok</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer-box">
+                                <h3 class="footer-title">
+                                    THEO DÕI FANPAGE CHÚNG TÔI ĐỂ CẬP NHẬT XU HƯỚNG THỜI TRANG HOT NHẤT:
+                                </h3>
+                                <div class="footer-fanpage">
+                                    <div class="fanpage-background">
+                                        <img src="./assets/img/footer-img.jpg" alt="">
+                                    </div>
+                                    <div class="fanpage-avatar">
+                                        <img src="./assets/img/footer-img2.jpg" alt="">
+                                        <div class="fanpage-info">
+                                            <div class="fanpage-name">
+                                                <a href="#" class="fanpage-link">Vergency</a>
+                                            </div>
+                                            <div class="fanpage-follow">282K người theo dõi</div>
+                                        </div>
+                                    </div>
+                                    <div class="fanpage-fb">
+                                        <a href="#" class="link-facebook">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                            <span>Follow facebook</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>©Bản quyền thuộc về VERGENCY.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="menu-mobile">
+        <div class="account-mobile">
+            <div class="avatar-mobile">
+                <i class="fa-regular fa-circle-user"></i>
+            </div>
+            <div class="account-text">
+                <div class="account-login">
+                    <a href="./login.html">Login</a>
+                </div>
+                <div class="account-register">
+                    <a href="./login.html">Register</a>
+                </div>
+            </div>
+        </div>
+        <ul class="menu-mobile">
+            <li class="menu-mobile__item">
+                <a href="./index.html" class="menu-mobile__link">Home</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a href="./shop.html" class="menu-mobile__link">
+                    Shop
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="list-product">
+                    <li class="menu__product">
+                        <a href="#" class="menu__product-link">T-SHIRTS</a>
+                    </li>
+                    <li class="menu__product">
+                        <a href="#" class="menu__product-link">SHIRTS</a>
+                    </li>
+                    <li class="menu__product">
+                        <a href="#" class="menu__product-link">SWEATERS</a>
+                    </li>
+                    <li class="menu__product">
+                        <a href="#" class="menu__product-link">HOODIES</a>
+                    </li>
+                    <li class="menu__product">
+                        <a href="#" class="menu__product-link">SHORTS</a>
+                    </li>
+                    <li class="menu__product">
+                        <a href="#" class="menu__product-link">BAGS</a>
+                    </li>
+                    <li class="menu__product">
+                        <a href="#" class="menu__product-link">PERFUME</a>
+                    </li>
+                    <li class="menu__product">
+                        <a href="#" class="menu__product-link">JACKET</a>
+                    </li>
+                    <li class="menu__product">
+                        <a href="#" class="menu__product-link">ACCESSORIES</a>
+                    </li>
+                    <li class="menu__product">
+                        <a href="#" class="menu__product-link">POLO</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-mobile__item">
+                <a href="./blog.html" class="menu-mobile__link">Blog</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a href="./contact.html" class="menu-mobile__link">Contact</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a href="./about.html" class="menu-mobile__link">About</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__link">Group</a>
+            </li>
+            <li class="menu-mobile__item">
+                <a href="#" class="menu-mobile__link">Instagram</a>
+            </li>
+        </ul>
+    
+    </div>
+
+    <div class="back-to-top">
+        <button><i class="fa-solid fa-chevron-up"></i></button>
+    </div>
+
+    <div class="hotline">
+        <a href="#"><i class="fa-sharp fa-solid fa-phone"></i></a>
+    </div>
+
+    <script src="./assets/JS/app.js"></script>
+    <script src="./assets/JS/validator.js"></script>
+    <script>
+        Validator({
+            form: '#form-login',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('.email'),
+                Validator.isEmail('.email'),
+                Validator.isRequired('.password'),
+                Validator.minLength('.password', 6),
+            ],
+            onSubmit: function(data) {
+                console.log(data);
+            }
+        });
+        Validator({
+            form: '#form-register',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('.firstname'),
+                Validator.isRequired('.lastname'),
+                Validator.isRequired('.email'),
+                Validator.isEmail('.email'),
+                Validator.isRequired('.password'),
+                Validator.minLength('.password', 6),
+                Validator.isRequired('#repeat_password'),
+                Validator.isConfirmation('#repeat_password', function() {
+                    return document.querySelector('.form-register .password').value;
+                }, 'Mật khẩu nhập lại không khớp. Vui lòng nhập lại!'),
+            ],
+            onSubmit: function(data) {
+                console.log(data);
+            }
+        });
+    </script>
+
+</body>
+</html>
